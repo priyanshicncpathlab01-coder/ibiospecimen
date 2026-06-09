@@ -1,14 +1,15 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 @theme {
-  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
   --color-primary: #652F91;
   --color-primary-light: #7E45AA;
   --color-primary-dark: #4C216F;
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: 'Plus Jakarta Sans', sans-serif;
   background-color: #f8fafc;
   color: #1e293b;
 }

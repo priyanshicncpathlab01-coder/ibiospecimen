@@ -16,7 +16,9 @@
     outline-offset: 2px;
   }
 }
-
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
 .hero {
   position: relative;
 

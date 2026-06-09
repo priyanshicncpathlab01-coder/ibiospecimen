@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShieldCheck } from "lucide-react";
 import { Droplet, Network, Database, Dna, ActivitySquare, Pill } from 'lucide-react';
+import bioimg from '../assets/bioimg.webp'
 
 const WhatIsWholeBlood = () => {
   const components = [
@@ -14,14 +15,16 @@ const WhatIsWholeBlood = () => {
 
   return (
     <section className="py-20 bg-white">
-      <div className="container mx-auto px-4 lg:px-8">
+      <div className="container mx-auto px-4 lg:px-8">  
         <div className="flex flex-col lg:flex-row gap-16 items-center">
 
           {/* Text Content */}
           <div className="lg:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">What Are Human Whole Blood Samples?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Human Biospecimens for Biomedical Research</h2>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              Human whole blood samples are unseparated blood specimens containing the complete profile of blood components. Whole blood is widely used because it preserves the native composition of blood, making it highly valuable for clinical and research applications.
+              iBioSpecimen provides high-quality human biospecimens for biomedical research, clinical studies, biomarker discovery, assay validation, molecular diagnostics, drug development, and medical device research. Through our global sourcing network, we offer ethically collected samples from healthy donors and patients with diverse disease conditions.
+              <br></br>
+              Our portfolio includes FFPE tissue blocks, fresh frozen tissue, whole blood, plasma, serum, PBMCs, matched sample sets, and disease-specific specimens, helping researchers accelerate scientific discovery and innovation.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -38,25 +41,17 @@ const WhatIsWholeBlood = () => {
               ))}
             </div>
           </div>
-
-          {/* Visual/Image Placeholder */}
-          <div className="lg:w-1/2 w-full">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-slate-100 to-slate-200 aspect-[4/3] flex items-center justify-center border border-slate-200">
-              {/* Decorative background circles */}
-              <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-red-400/20 rounded-full blur-3xl"></div>
-              <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
-
-              <div className="text-center z-10 p-8 bg-white/80 backdrop-blur-md rounded-2xl shadow-sm border border-white/50 max-w-sm mx-auto">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 text-red-500 mb-4 shadow-inner">
-                  <Droplet className="w-8 h-8" />
-                </div>
-                <h3 className="text-xl font-bold text-slate-800 mb-2">Native Composition</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  Preserving the complete biological system for accurate holistic research.
-                </p>
-              </div>
+<div className="lg:w-1/2 w-full">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] border border-slate-200">
+              <img
+                src={bioimg}
+                alt="Human Biospecimens"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
+          {/* Visual/Image Placeholder */}
+          
 
         </div>
       </div>
